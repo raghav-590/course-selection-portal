@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Selection Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">EduPortal</a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section class="selection-display-box">
+      <h2>Your Selection</h2>
+      <div id="selection-status">
+        <p class="placeholder-text">No course selected yet. Please browse and select a course below.</p>
+      </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+      <h2>Available Courses</h2>
+      <div class="course-grid">
+        <div class="course-card" id="card-CS101">
+          <div class="course-badge">CS101</div>
+          <h3>Introduction to Computer Science</h3>
+          <p class="instructor"><strong>Instructor:</strong> Dr. S.S. Singh</p>
+          <p class="description">Learn the foundational concepts of computing, algorithmic thinking, and problem-solving
+            using modern programming languages.</p>
+          <button class="select-btn"
+            onclick="selectCourse('CS101', 'Introduction to Computer Science', 'Dr. S.S. Singh')">Select Course</button>
+        </div>
+
+        <div class="course-card" id="card-FWD201">
+          <div class="course-badge">WEB201</div>
+          <h3>Fundamentals of Web Development</h3>
+          <p class="instructor"><strong>Instructor:</strong> Prof. K. Sharma</p>
+          <p class="description">Master the core building blocks of the web. Build responsive, interactive user
+            interfaces using HTML, CSS, and JavaScript.</p>
+          <button class="select-btn"
+            onclick="selectCourse('FWD201', 'Fundamentals of Web Development', 'Prof. K. Sharma')">Select Course</button>
+        </div>
+
+        <div class="course-card" id="card-CSE301">
+          <div class="course-badge">CYBER301</div>
+          <h3>Introduction to Cybersecurity</h3>
+          <p class="instructor"><strong>Instructor:</strong> Dr. S. Kaplan</p>
+          <p class="description">Explore network security fundamentals, cryptography, ethical hacking baselines, and
+            practical defensive techniques.</p>
+          <button class="select-btn"
+            onclick="selectCourse('CSE301', 'Introduction to Cybersecurity', 'Dr. S. Kaplan')">Select Course</button>
+        </div>
+
+        <div class="course-card" id="card-DS401">
+          <div class="course-badge">DS401</div>
+          <h3>Data Structures & Algorithms</h3>
+          <p class="instructor"><strong>Instructor:</strong> Prof. A. Bist</p>
+          <p class="description">Dive deep into arrays, linked lists, trees, and graphs. Optimize code performance and
+            master core algorithmic paradigms.</p>
+          <button class="select-btn"
+            onclick="selectCourse('DS401', 'Data Structures & Algorithms', 'Prof. A. Bist')">Select Course</button>
+        </div>
+
+        <div class="course-card" id="card-AI101">
+          <div class="course-badge">AI501</div>
+          <h3>Introduction to Artificial Intelligence</h3>
+          <p class="instructor"><strong>Instructor:</strong> Dr. K. Seth</p>
+          <p class="description">Delve into the core principles of AI, including machine learning algorithms, neural
+            networks, natural language processing, and ethical AI deployment.</p>
+          <button class="select-btn"
+            onclick="selectCourse('AI101', 'Introduction to Artificial Intelligence', 'Dr. K. Seth')">Select
+            Course</button>
+        </div>
+
+        <div class="course-card" id="card-MTH102">
+          <div class="course-badge">MATH102</div>
+          <h3>Discrete Mathematics</h3>
+          <p class="instructor"><strong>Instructor:</strong> Prof. A. DeshPanday</p>
+          <p class="description">Master the mathematical foundations essential for computer science. Topics include
+            formal logic, set theory, combinatorics, graph theory, and proof techniques.</p>
+          <button class="select-btn"
+            onclick="selectCourse('MTH102', 'Discrete Mathematics', 'Prof. A. DeshPanday')">Select Course</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="contact-container">
+      <h2>About This Project</h2>
+      <p>
+        Welcome to the Course Selection Portal, an intuitive, student-centric platform designed to simplify academic
+        enrollment. Our mission is to bridge the gap between academic exploration and seamless course registration,
+        giving you a clean, card-based interface to browse, evaluate, and choose your learning pathways with a single
+        click.
+      </p>
+      <br>
+      <p>Built strictly with clean, modern web technologies—HTML5, CSS3, and native JavaScript—this platform delivers an
+        optimized, highly responsive experience across all mobile, tablet, and desktop screens. Whether you are aligning
+        your schedule with core computer science tracks, exploring network security baselines, or diving into
+        development architectures, our portal ensures your academic journey stays perfectly organized and effortless.
+      </p>
+    </section>
+
+    <section class="contact-container" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Suggestions" rows="5"></textarea>
+        <button type="submit" class="select-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Raghav | FWD Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
